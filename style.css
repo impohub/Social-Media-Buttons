@@ -1,0 +1,49 @@
+:root {
+    --buttonColor: rgb(116, 172, 255);
+    --iconColor: rgb(255, 255, 255);
+    --buttonHoverColor: rgb(255, 255, 255);
+    --iconHoverColor: rgb(116, 172, 255);
+}
+body {
+    background-color: #232323;
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialMedia {
+    width: 600px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.socialMedia .fa-brands {
+    font-size: 3rem;
+    color: var(--iconColor);
+}
+.socialMediaButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--buttonColor);
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.2s ease;
+}
+.socialMediaButton:hover {
+    background-color: var(--buttonHoverColor);
+    width: 250px;
+}
+.button-text {
+    font-size: 2rem;
+    color: var(--iconHoverColor);
+    display: none;
+}
